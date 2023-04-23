@@ -1,0 +1,164 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+:root {
+    --moonstone: #7cacb6ff;
+    --silver: #c7c9c6ff;
+    --golden-brown: #a47005ff;
+    --myrtle-green: #476d70ff;
+    --licorice: #19110eff; 
+ }
+/* ---------------ESTILO DE BARRA DE NAVEGACION------------- */
+
+.navbar navbar-expand-lg bg-body-tertiary{ 
+	position: fixed; 
+	gap: 60px;
+	color: white;
+}
+.navbar-brand{
+color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color: white!important;
+}
+.nav-link{
+	color: white!important;
+
+}
+.navbar-toggler-icon{
+    background: url('https://api.iconify.design/material-symbols/menu-rounded.svg?color=white') no-repeat center center / contain;}
+header {
+        background:var(--moonstone);
+}
+
+
+/* --------------------Estilo de BODY GALERIA---------------------- */
+  .cuerpogaleria1{
+    background-image: url(/img/presentacion2.jpg);
+    color: var(--golden-brown);
+	background-attachment: fixed;
+	background-size: cover;
+  }
+
+    h1{
+    width: 90%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6);
+    background-color: var(--licorice);opacity: 75%;
+    
+  }
+  
+  
+  /*------------------------  GALERIA RESPONSIVE  ------------------------ */
+  .caja_padre{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    
+  }
+  
+  .imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 12px;
+  }
+  
+  .imagen{
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    background-color: white;
+  
+  }
+  
+  .imagen_horizontal_uno{
+    grid-column: 1 / 3;
+  }
+  
+  .imagen_vertical_uno{
+    grid-row: -3 / -1;
+    grid-column: 4 / 5;
+  }
+  
+  .imagen_horizontal_dos{
+    grid-column: 2 / 4;
+  }
+  
+  
+  /*---------------------  MEDIA QUERY  1024PX--------------------- */
+  @media  screen and (max-width: 1024px) {
+    .caja_padre{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .imagen_vertical_uno{
+      grid-row: 3 / 4;
+      grid-column: 1 / 4;
+    }
+  
+    h1{
+      font-size: 45px;
+    }
+  }
+  
+  
+  /*---------------------  MEDIA QUERY  768PX--------------------- */
+  @media screen and (max-width: 768px) {
+    .caja_padre{
+      grid-template-columns: 1fr;
+    }
+  
+    .imagen_horizontal_uno{
+      grid-column: auto;
+    }
+  
+    .imagen_vertical_uno{
+      grid-row: auto;
+      grid-column: auto;
+    }
+  
+    .imagen_horizontal_dos{
+      grid-column: auto;
+    }
+  
+    h1{
+      font-size: 35px;
+    }
+  }
+
+  /*-------------- ESTILO DE FOOTER------------ */
+
+  #main-footer {
+	text-align: center;
+	padding: 40px;
+	margin-top: 40px;}
+
+
+ #main-footer p{
+		font-size: 0.9rem;
+        background: var(--moonstone);
+		margin: 0;
+        width: 100%; 
+        left: 0;
+		color: var(--licorice);
+	}
+	
+#main-footer a {
+		color: white;
+		width: 100%;
+	}

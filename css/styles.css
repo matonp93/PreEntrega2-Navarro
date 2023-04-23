@@ -1,0 +1,354 @@
+
+/* Configuracion inicial de estilo */
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+/* Codigo de Colores a utilizar en el sitio */
+
+:root {
+   --moonstone: #7cacb6ff;
+   --silver: #c7c9c6ff;
+   --golden-brown: #a47005ff;
+   --myrtle-green: #476d70ff;
+   --licorice: #19110eff; 
+}
+ /* ----------------ESTILO INDEX-------------------- */
+
+ 
+.titulos h1{
+    width: 90%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6);
+    background-color: var(--licorice);opacity: 80%;
+    
+  }
+body {	
+    color: var(--golden-brown);
+	background-image: url(../img/presentacion4.jpg);
+	background-attachment:fixed;
+	background-size: cover;
+	font-size: 1em;
+	line-height: 1.5em; 
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*------------------------------------ESTILO BARRA DE NAVEGACION----------------------------------------- */
+	
+navbar navbar-expand-lg bg-body-tertiary{ 
+	position: fixed; 
+	gap: 60px;
+	color: white;
+}
+
+.navbar-brand{
+color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color: white!important;
+}
+.nav-link{
+	color: white!important;
+
+}
+.navbar-toggler-icon{
+	background: url('https://api.iconify.design/material-symbols/menu-rounded.svg?color=white') no-repeat center center / contain;
+}
+header {
+        background:var(--moonstone);
+}
+
+.main-content {
+	display: grid;
+    grid-template-rows: repeat(2, 0.1fr);
+    gap: 15px;
+    width: 90%;
+	margin: 50px auto;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+	background-color: var(--licorice);
+	opacity: 80%;
+}
+.main-content p{
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: justify;
+}
+
+.section-galindex{
+	display: flex;
+	padding: 15px;
+	width: 90%;
+	height: 28.12rem;
+	margin: 20px auto;
+	border-radius: 12px;
+	background-color: var(--licorice);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+.section-galindex img{
+	width: 0px;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: 0.8;
+	transition: .5 ease;
+	border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+	
+}
+.section-galindex img:hover {
+	cursor: crosshair;
+	width: 18.7rem;
+	opacity: 1;
+	filter: contrast(120%);
+}
+
+#main-footer {
+	text-align: center;
+	padding: 40px;
+	margin-top: 40px;}
+
+
+ #main-footer p{
+		font-size: 0.9rem;
+        background: var(--moonstone);
+		margin: 0;
+        width: 100%; 
+        left: 0;
+		color: var(--licorice);
+	}
+	
+#main-footer a {
+		color: white;
+		width: 100%;
+	}
+
+/* --------------------------- /FIN ESTILO INDEX /-------------------- */
+
+/*--------------------------------ESTILO EBOOKS-----------------------------------------*/
+
+#cuerpo-ebooks {
+background-image: url(../img/presentacion6.jpg);
+background-attachment: fixed;
+max-width: 1100px;
+background-color:  var(--myrtle-green);
+color: var(--licorice);
+}
+
+.titulodepagina{
+	font-size: 40px;
+	color: var(--golden-brown);
+	margin-top: 70px;
+}
+
+img{
+	max-width: 100%;
+}
+
+.conteiner-icon{
+	float: right;
+	justify-content: space-betweenL;
+	padding: 30px 0 40px 0 0;
+}
+.conteiner-items{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.item{
+	border-radius: 10px;
+}
+
+.item:hover{
+box-shadow: 0 30px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0 ;
+	transition all: .5s;
+
+}
+.item figure{
+	overflow: hidden;
+}
+.item:hover img{
+transform: scale(1.2);
+}
+
+.info-product{
+	color: var(--licorice);
+	padding: 15px 30px;
+	line-height: 2;
+	display: inline-block;
+	gap: 10px;
+}
+
+.price{
+	color: var(--golden-brown);
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.info-product button{
+	align-content: center;
+	border: none;
+	background: none;
+	background-color: var(--golden-brown);
+    color: white;
+	padding: 15px 10px;
+	cursor: pointer;
+	border-radius: 10px 10px 10px 10px;
+}
+
+/*-------------------------------- FIN ESTILO EBOOKS-----------------------------------------*/
+
+
+/*--------------------------------ESTILO  CONTACTOS-----------------------------------------*/
+
+#cuerpo-contacto{
+	background-image: url(../img/presentacion4.jpg);
+	background-attachment: fixed;
+	align-content: center;
+}
+.container-form{ 
+	width: 90%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6);
+    background-color: var(--licorice);opacity: 80%;	
+}
+
+.cuerpo-form{
+	width: 90%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6);
+    background-color: var(--licorice);opacity: 80%;	
+}
+.container-form h2{
+	margin-bottom: 15px;
+	font-size: 40px;
+}
+
+.container-form p{
+	display: inline;
+	font-size: 20px;
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.container-form a{
+	font-size: 17px;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	color: var(--golden-brown);
+	margin-bottom: 15px;
+	font-weight: 700;
+
+}
+/*--------------------------------FIN ESTILO PAGINA DE CONTACTO-----------------------------------------*/
+
+/*--------------------------------ESTILO RECETAS-----------------------------------------*/
+
+.cuerporeceta{
+	background-image: url(../img/presentacion7.jpg);
+	background-attachment: fixed;
+}
+
+.titulorecetas{
+	font-size: 40px;
+	color: var(--golden-brown);
+	}
+
+.primer-receta {
+	background: white;
+	opacity: 100%;
+	width: 90%;
+	max-width: 700px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.primer-receta header,.primer-receta .content{
+	padding: 20px;
+	opacity: 100%;
+	}
+
+
+
+/*-------------------------------- FIN ESTILO RECETAS-----------------------------------------*/
+
+
+/*--------------------------------MEDIA QUERIES-----------------------------------------*/
+	
+/* -------------Media Query 1024px ------------------*/
+
+@media screen and (max-width:1024px){
+.container-form{
+		width: 90%;
+	}
+.cuerpo-form{
+		width: 90%;
+		padding-right: 20px;
+}
+.section-galindex{
+	padding: 15px;
+	width: 90%;
+	height:90%;
+}
+.section-galindex img:hover{
+	width: 60%;
+}
+
+
+	/*---------------------------------------- Media Query 768px---------------------------- */
+@media screen and (max-width:768px){
+
+	/* Media queries index */
+
+.section-galindex{
+	padding: 15px;
+	width: 90%;
+	height:90%;
+}
+.section-galindex img:hover{
+	width: 60%;
+	
+}
+.cuerpo-form{
+	width: 90%;
+	padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
